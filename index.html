@@ -12,7 +12,7 @@
       background-color: #000;
       color: #fff;
       height: 100%;
-      background-image: url('https://github.com/moving0still/signup/blob/ad6b4d1a331423f2418c876199887f47e53897a0/logoboxsize.png');
+      background-image: url('https://github.com/username/repository-name/raw/main/mobile-background.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -48,10 +48,20 @@
 
     iframe {
       width: 100%;
-      height: 600px;
+      height: 700px; /* Adjust height to match content */
       border: none;
       border-radius: 8px;
       z-index: 2;
+      margin: 0;
+    }
+
+    /* Placeholder image for desktop only */
+    .image-placeholder {
+      display: none; /* Hidden by default */
+      width: 50%; /* Adjust to desired size */
+      height: auto;
+      margin-right: 20px;
+      z-index: 1;
     }
 
     @media (min-width: 768px) {
@@ -79,20 +89,36 @@
       body {
         background-attachment: initial; /* Disable fixed background for desktop for better performance */
       }
+
+      /* Show placeholder image only on desktop */
+      .image-placeholder {
+        display: block;
+      }
+
+      iframe {
+        width: 50%; /* Adjust iframe to leave space for the image on desktop */
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="socials">
-      <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
-      <a href="#" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-      <a href="#" target="_blank" title="Resident Advisor"><i class="fa fa-music"></i></a>
+      <a href="https://www.instagram.com/moving0still" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://open.spotify.com/artist/4VVwqrM50CuVgB7yKHkl8Q" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="https://www.soundcloud.com/movingstill" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://ra.co/dj/movingstill" target="_blank" title="Resident Advisor"><i class="fa fa-music"></i></a>
     </div>
 
-    <iframe src="https://forms.gle/G1bzj1KEbMP5ZqkAA" allowfullscreen></iframe>
+    <div class="left">
+      <!-- Placeholder image for desktop -->
+      <img class="image" src="https://github.com/moving0still/signup/blob/008381c29f34d0eefab910eff4dd910033a9465d/Moving%20Still_img_0026.jpg" alt="Moving Still Image">
+    </div>
+
+    <div class="right">
+      <!-- Google Form Embed -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf_D18lzdtElj2ZppxTnNVxPUuIwB9AhhCKvD1h3gJcgGC-_w/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
   </div>
 </body>
 </html>
-
