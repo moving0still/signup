@@ -42,9 +42,22 @@
       transition: color 0.2s ease;
     }
 
-    .socials a:hover {
-      color: #1db954; /* Spotify green, or change for your brand */
-    }
+    .socials a.spotify:hover {
+  color: #1db954; /* Spotify green */
+}
+
+.socials a.instagram:hover {
+  color: #e4405f; /* Instagram pink-red */
+}
+
+.socials a.soundcloud:hover {
+  color: #ff5500; /* SoundCloud orange */
+}
+
+.socials a.ra:hover {
+  color: #ccc; /* Light grey for Resident Advisor */
+}
+
 
     iframe {
       width: 100%;
@@ -90,10 +103,11 @@
 </head>
 <body>
  <div class="socials">
-    <a href="https://www.instagram.com/moving0still" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://open.spotify.com/artist/4VVwqrM50CuVgB7yKHkl8Q" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
-    <a href="https://www.soundcloud.com/movingstill" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-    <a href="https://ra.co/dj/movingstill" target="_blank" title="Resident Advisor"><i class="fa fa-music"></i></a>
+    <a href="https://www.instagram.com/moving0still" class="social instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://open.spotify.com/artist/4VVwqrM50CuVgB7yKHkl8Q" class="social spotify" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+<a href="https://www.soundcloud.com/movingstill" class="social soundcloud" target="_blank" title="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+<a href="https://ra.co/dj/movingstill" class="social ra" target="_blank" title="Resident Advisor"><i class="fa fa-music"></i></a>
+
   </div>
   <div class="container">
     
