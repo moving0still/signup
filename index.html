@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moving0Still</title>
+  <title>Moving Still - Producer - DJ</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
@@ -12,7 +12,7 @@
       background-color: #000;
       color: #fff;
       height: 100%;
-      background-image: url('https://raw.githubusercontent.com/username/repository-name/main/mobile-background.jpg');
+      background-image: url('https://raw.githubusercontent.com/moving0still/signup/main/logoboxsize.png');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -55,50 +55,37 @@
       margin: 0;
     }
 
-    /* Placeholder image for desktop only */
-    .image-placeholder {
-      display: none; /* Hidden by default */
-      width: 50%; /* Adjust to desired size */
-      height: auto;
-      margin-right: 20px;
-      z-index: 1;
-    }
+    /* Update image placeholder */
+.image {
+  display: none; /* still hidden on mobile */
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
 
     @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 40px;
-      }
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
 
-      .left {
-        flex: 1;
-      }
+  .left, .right {
+    flex: 1;
+  }
 
-      .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
+  .image {
+    display: block;
+    width: 100%;
+  }
 
-      .socials {
-        justify-content: flex-start;
-        margin-bottom: 10px;
-      }
+  iframe {
+    width: 100%;
+  }
+}
 
-      body {
-        background-attachment: initial; /* Disable fixed background for desktop for better performance */
-      }
-
-      /* Show placeholder image only on desktop */
-      .image-placeholder {
-        display: block;
-      }
-
-      iframe {
-        width: 50%; /* Adjust iframe to leave space for the image on desktop */
-      }
-    }
+    
   </style>
 </head>
 <body>
@@ -112,7 +99,7 @@
 
     <div class="left">
       <!-- Placeholder image for desktop -->
-      <img class="image-placeholder" src="https://raw.githubusercontent.com/moving0still/signup/008381c29f34d0eefab910eff4dd910033a9465d/Moving%20Still_img_0026.jpg" alt="Moving Still Image">
+      <img class="image" src="https://github.com/moving0still/signup/blob/008381c29f34d0eefab910eff4dd910033a9465d/Moving%20Still_img_0026.jpg" alt="Moving Still Image">
     </div>
 
     <div class="right">
