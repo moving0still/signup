@@ -54,10 +54,15 @@
   color: #ff5500; /* SoundCloud orange */
 }
 
-.socials a.ra:hover {
-  color: #ccc; /* Light grey for Resident Advisor */
+.socials a.ra img {
+  height: 1.5rem; /* Adjust to match the size of other icons */
+  vertical-align: middle;
+  transition: filter 0.3s ease; /* Smooth transition */
 }
 
+.socials a.ra:hover img {
+  filter: brightness(0.7); /* Darkens the image on hover */
+}
 
     iframe {
       width: 100%;
